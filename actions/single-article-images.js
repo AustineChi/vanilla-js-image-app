@@ -37,7 +37,7 @@ previewFile = () => {
 getImages = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
     {
       method: "GET",
       headers: {
@@ -66,7 +66,7 @@ getImages = () => {
 addImage = () => {
   data.articleId = articleId;
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
     {
       method: "POST",
       body: JSON.stringify(data),
@@ -89,7 +89,7 @@ deleteImage = id => {
   if (r == true) {
     showPage(false);
     fetch(
-      `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images/${id}`,
+      `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images/${id}`,
       {
         method: "DELETE",
         headers: {

@@ -4,7 +4,7 @@ let limit = 10;
 getData = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article?page=${page}&limit=${limit}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article?page=${page}&limit=${limit}`,
     {
       method: "GET",
       headers: {
@@ -41,7 +41,7 @@ deleteArticle = id => {
   if (r == true) {
     showPage(false);
     fetch(
-      `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${id}`,
+      `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${id}`,
       {
         method: "DELETE",
         headers: {

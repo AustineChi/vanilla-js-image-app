@@ -24,7 +24,7 @@ function closeForm() {
 getData = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
     {
       method: "GET",
       headers: {
@@ -59,7 +59,7 @@ getData = () => {
 getImages = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/images`,
     {
       method: "GET",
       headers: {
@@ -94,7 +94,7 @@ getImages = () => {
 
 updateComment = id => {
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments/${commentData.id}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments/${commentData.id}`,
     {
       method: "PUT",
       body: JSON.stringify(commentData),
@@ -115,7 +115,7 @@ updateComment = id => {
 
 addComment = () => {
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments`,
     {
       method: "POST",
       body: JSON.stringify(commentData),
@@ -134,7 +134,7 @@ addComment = () => {
 
 deleteComment = id => {
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments/${id}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments/${id}`,
     {
       method: "DELETE",
       headers: {
@@ -161,7 +161,7 @@ selectUpdate = i => {
 getComments = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}/comments`,
     {
       method: "GET",
       headers: {

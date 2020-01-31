@@ -25,7 +25,7 @@ validate = () => {
 updateArticle = () => {
   showPage(false);
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
     {
       method: "PUT",
       body: JSON.stringify(articleData),
@@ -47,7 +47,7 @@ updateArticle = () => {
 
 addNewArticle = () => {
   showPage(false);
-  fetch(`http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/`, {
+  fetch(`https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/`, {
     method: "POST",
     body: JSON.stringify(articleData),
     headers: {
@@ -97,7 +97,7 @@ onSubmit = () => {
 
 getData = () => {
   fetch(
-    `http://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
+    `https://5e0df4b536b80000143db9ca.mockapi.io/etranzact/v1/article/${articleId}`,
     {
       method: "GET",
       headers: {
