@@ -35,6 +35,7 @@ getData = () => {
     });
 };
 
+
 deleteArticle = id => {
   let r = confirm(`Are you sure you want to delete article with Id: "${id}"?`);
   if (r == true) {
