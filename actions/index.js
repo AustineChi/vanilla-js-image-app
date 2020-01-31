@@ -23,11 +23,11 @@ getData = () => {
         output += `<article class="single-item "><div class="image-wrap">
           <img src="${resData[i].avatar}" alt="Smiley face" width="100%">
           </div><div class="header"><h4 class="title">
-                  <a href="./view-article.html?id=${resData[i].id}"> ${resData[i].title}</a>
+                  <a href="./views/view-article.html?id=${resData[i].id}"> ${resData[i].title}</a>
               </h4></div>
           <div class="footer">
-              <a class="button view" href="./view-article.html?id=${resData[i].id}">view</a>
-              <a class="button update" href="./post-article.html?id=${resData[i].id}">update</a>
+              <a class="button view" href="./views/view-article.html?id=${resData[i].id}">view</a>
+              <a class="button update" href="./views/post-article.html?id=${resData[i].id}">update</a>
               <a class="button delete" onclick="deleteArticle(${resData[i].id})">delete</a>
           </div></article>`;
       }
