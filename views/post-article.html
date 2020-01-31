@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>post article</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <body>
+        <div id="loader"></div>
+        <div class="width-wrapper">
+            <button class="back-btn" onclick="goBack()">back</button>
+            <div class="breadcrumb mt-30">Add Article</div>
+
+            <form id="main" class="article-form animate-bottom" name="articleForm" onsubmit="return false">
+                <label for=""> Title:</label>
+                <input type="text" name="title" onchange="onChange(this)" required>
+                <label for="">Url: </label>
+                <input type="url" name="url" onchange="onChange(this)" required>
+
+                <label for="">Avatar:</label>
+                <input type="file" onchange="previewFile()">
+                <img src="" height="200" alt="Image preview...">
+                <button class="btn" onclick="onSubmit()">Submit</button>
+            </form>
+
+        </div>
+        <script src="../actions/utility.js"></script>
+        <script src="../actions/post-article.js"></script>
+    </body>
+</body>

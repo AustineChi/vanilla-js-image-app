@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="width-wrapper">
+        <button class="back-btn" onclick="goBack()">back</button>
+        <div class="breadcrumb mt-30">
+            Manage Images (Admin)
+            <button class="btn" id="switchModal">Add Images</button>
+        </div>
+        <div id="main">
+            <div id="article-section" class="animate-bottom"></div>
+
+        </div>
+
+    </div>
+    
+    <div id="modal-section">
+        <div id="myModal" class="modal">
+
+            <div class="modal-content animate-bottom">
+                <span class="close">&times;</span>
+                <form class="article-form" name="articleForm" onsubmit="return false">
+                    <label for="">Avatar:</label>
+                    <input type="file" onchange="previewFile()">
+                    <img src="" height="200" alt="Image preview..." id="preview">
+                    <button class="btn" onclick="onSubmit()">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="../actions/utility.js"></script>
+    <script src="../actions/single-article-images.js"></script>
+</body>
+
+</html>

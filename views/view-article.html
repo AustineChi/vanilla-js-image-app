@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View Article</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="width-wrapper">
+        <button class="back-btn" onclick="goBack()">back</button>
+        <div class="breadcrumb mt-30">
+            <span id="article-name"></span>
+            <a class="btn" id="manage-image-tag">Manage Images</a>
+        </div>
+
+        <div id="main">
+            <div id="article-section" class="animate-bottom">
+                <div id="section-one">
+                </div>
+                <div id="section-two">
+                    <div id="section-two-left">
+                        <div class="carousel">
+                            <ul class="slides" id="slides">
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="section-two-right">
+                        <h4>All comments</h4>
+                        <div id="comments">
+                        </div>
+
+                        <button class="open-button" onclick="openForm()">Comment</button>
+                        <div class="comment-popup" id="myForm">
+                            <form class="form-container" onsubmit="return false">
+                                <h1>Comment</h1>
+
+                                <label for="msg"><b>Message</b></label>
+                                <textarea placeholder="Type message.." name="comment" required onchange="onChange(this)"></textarea>
+
+                                <button type="submit" class="btn" onclick="submitComment()">Send</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../actions/utility.js"></script>
+    <script src="../actions/view-article.js"></script>
+    <script src="../actions/comments.js"></script>
+</body>
