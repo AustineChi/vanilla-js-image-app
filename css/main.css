@@ -337,6 +337,14 @@
   transition: all .7s ease-in-out;
 }
 
+#section-two-left .slide-image img {
+  width: 99%;
+  height: 99%;
+  background: url(../images/loading.gif) 50% no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
 #section-two-left .carousel-dots {
   position: absolute;
   left: 0;
